@@ -3,10 +3,15 @@
   height: fit-content; */
   display: flex;
   align-items: flex-start;
-  position: absolute;
+  /* position: absolute;
   left: 0%;
-  right: 0%;
+  right: 0%; */
   margin-bottom: 10%;
+  width: 100%;
+}
+
+.flex-search {
+  width: 100%;
 }
 
 .input-search {

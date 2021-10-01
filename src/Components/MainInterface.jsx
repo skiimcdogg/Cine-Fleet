@@ -11,7 +11,7 @@ function MainInterface(props) {
     
     oneMovieArr.push(props.movie.genre_ids);
 
-    let genreArr = genres.length > 0 ? genres.filter((e) => oneMovieArr.includes(e.id)) : [];
+    let genreArr = genres.length > 0 ? genres.filter((e) => oneMovieArr.flat().includes(e.id)) : [];
     
     let url = 'https://api.themoviedb.org/3/genre/movie/list?api_key=cd1bd6de3fb68a4df732f8ce7ef76b69&language=en-US'
     const fetchGenres = () => {
@@ -38,7 +38,10 @@ function MainInterface(props) {
     }
 
     
-  console.log(props.movie.title, "props" );
+    
+  // console.log(props.movie.genre_ids);
+  // console.log();
+  // console.log(oneMovieArr);
   return (
      
     <div className="movie-container">

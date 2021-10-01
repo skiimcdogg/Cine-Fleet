@@ -2,16 +2,16 @@
 
 .nav-bar {
   background-color: #1F2833;
-  width: 30%;
+  width: 35em;
   font-family: Lato;
-  position: absolute;
+  /* position: absolute;
   bottom: 0%;
-  top: 0%;
-  padding: 2%;
+  top: 0%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
+  height: 100vh;
 }
 
 .nav-bar::-webkit-scrollbar {
@@ -22,7 +22,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: fit-content;
   margin-top: 13%;
 }
 
