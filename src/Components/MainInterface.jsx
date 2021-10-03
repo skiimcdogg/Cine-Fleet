@@ -35,7 +35,7 @@ function MainInterface(props) {
   useEffect(() => {
     setLoading(true);
     fetchGenres();
-  }, []);
+  },[]);
 
   if (loading) {
     return <p>Data is loading ...</p>;
