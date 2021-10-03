@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
     background-color: #0B0C10;
 }
@@ -5,14 +7,97 @@ body {
 .movie-container { 
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     color: beige;
 }
 
-/* IL FAUT CENTRER LA DIV CONTAINER (A CAUSE DES IMAGES) AUTREMENT VOIR ARTICLES MEDIUMS */
+.no-movie {
+    font-family: Lato;
+    font-size: 150%;
+    margin-top: 15%
+}
 
 .movie-img {
     width: 25%;
     height: 30%;
 }
+
+.title-container {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #045f59;
+    box-shadow: 0 4px 2px -2px #0dd4c7;
+}
+
+.title-container > h1 {
+    background-image: linear-gradient(
+    15deg,
+    #6BE1BA 19%,
+    #6E54EF 81%
+  );
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  -webkit-background-clip: text;
+  font-family: Lato;
+  font-size: 400%;
+}
+
+.movie-card {
+    font-family: Lato;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.movie-card > h2 {
+    color: #45A29E;
+    padding-bottom: 2%;
+}
+
+.movie-card p {
+    padding-bottom: 0.5%;
+}
+
+.movie-img {
+    width: 30%;
+    height: auto;
+    padding-bottom: 1%;
+}
+
+.genres {
+    display: flex;
+    justify-content: center;
+    width: -webkit-fill-available;
+}
+
+.one-genre {
+    padding-right: 2%;
+    font-weight: bolder;
+}
+
+.separating-div {
+    background-color: #45A29E;
+    height: 80%;
+    width: 1px;
+}
+
+.movie-details {
+    display: flex;
+    align-items: center;
+    height: -webkit-fill-available;
+}
+
+.overview {
+    padding: 4%;
+    font-family: Lato;
+    font-size: 110%;
+    width: 600px;
+}
+
